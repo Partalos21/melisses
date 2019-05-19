@@ -2,7 +2,15 @@
 
 	<head>
 		<link rel="stylesheet" href="Style.css">
-		<title>Basket</title>
+		<title>Καλάθι Αγορών</title>
+		<script language="JavaScript">
+			var counter=0;
+			function display() {
+				counter++;
+				if counter==0 {
+				}
+			}
+		</script> 
 	</head>
 
 	<body>
@@ -27,9 +35,16 @@
 				<td>	<a>ΤΙΜΗ</a>
 				<td>	<a>ΠΟΣΟΤΗΤΑ</a>
 								
-				</tr>
+				</tr>  
+				
 				<tr>
+				
+				<td> <a></a>
+				<td> <a></a>
+				<td> <a><input type="button" value="-" onclick="dispaly();" /> <input type="button" value="+" onclick="display();" /></a>
+					
 				</tr>
 		</table>	
-	</body>
+		<input type="button" value="Ολοκλήρωση Παραγγελίας " onclick="window.open('forma.html')" /> 
+		</body>
 </html>
