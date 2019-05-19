@@ -2,6 +2,11 @@
 	<head>
 		<link rel="stylesheet" href="Style.css">
 		<title>ΟΛΟΚΛΗΡΩΣΗ ΠΑΡΑΓΓΕΛΙΑΣ</title>
+		<script language="JavaScript">
+			function finish1() {
+			alert("Ευχαριστούμε για την παραγγελία σας");
+			}
+			</script>
 	</head>
 	<body>
 		<h1>ΟΛΟΚΛΗΡΩΣΗ ΠΑΡΑΓΓΕΛΙΑΣ</h1>
@@ -90,7 +95,8 @@
 			<tr>
 			<td>Τηλέφωνο :
 			<td><input id="phone" type="text">
-			<input type="submit" value="Αποθήκευση" >
+			<input type="submit" value="Αποθήκευση"onclick="finish1();" >  
+			<td><input type="submit" value="Αρχική Σείδα" onclick="window.open('index.html')"  >
 			</tr>
 			</form>
 	</table>
