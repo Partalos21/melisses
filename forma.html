@@ -14,21 +14,21 @@
 			<tr>
 			<form name="myForm" action="" onSubmit="return
 			validateForm()" method="post">
-			<td> Όνομα:
-			<td><input id="fname" type="text">
+			<td> Όνομα* :
+			<td><input id="fname" type="text" onBlur="checkfname()" >
 			</tr>
-			<td> Επίθετο :
-			<td><input id="lname" type="text">
-			</tr>
-			<tr>
-			<td>Email:
-			<td><input id="email" type="text">
+			<td> Επίθετο* :
+			<td><input id="lname" type="text" onBlur="checklname()" >
 			</tr>
 			<tr>
-			<td>Χώρα :
-			<td><input id="counrty" type="text">
+			<td>Email* :
+			<td><input id="email" type="text"  onBlur="checkemail()">
 			</tr>
-			<td>Πόλη :
+			<tr>
+			<td>Χώρα* :
+			<td><input id="counrty" type="text" onBlur="checkcountry()">
+			</tr>
+			<td>Πόλη* :
 			<td><select>
 				<option value="Attiki">Αττικής</option>
 				<option value="Euboia">Εύβοιας</option>
@@ -85,19 +85,69 @@
 				</select><br/>
 			</tr>
 			<tr>
-			<td>Διεύθυνση :
-			<td><input id="address" type="text">
+			<td>Διεύθυνση* :
+			<td><input id="address" type="text" onBlur="checkaddress()" >
 			</tr>
 			<tr>
-			<td>TK :
-			<td><input id="tk" type="text">
+			<td>TK* :
+			<td><input id="tk" type="text"  onBlur="checktk()">
 			</tr>
 			<tr>
-			<td>Τηλέφωνο :
-			<td><input id="phone" type="text">
+			<td>Τηλέφωνο* :
+			<td><input id="phone" type="text"  onBlur="checkphone()">
 			<input type="submit" value="Αποθήκευση"onclick="finish1();" >  
 			<td><input type="submit" value="Αρχική Σείδα" onclick="window.open('index.html')"  >
 			</tr>
 			</form>
 	</table>
+	<script language="JavaScript">
+		function checkfname() {
+				var fname=document.getElementById("fname");
+				if (fname.value.length==0 || fname.value==" ")
+					{fname.focus();
+					fname.style.backgroundColor='#e35152';
+					} else fname.style.backgroundColor='#ccffcc'; } 
+		function checklname() {
+				var lname=document.getElementById("lname");
+				if (lname.value.length==0 || lname.value==" ")
+					{lname.focus();
+					lname.style.backgroundColor='#e35152';
+					} else lname.style.backgroundColor='#ccffcc'; } 
+		function checkemail() {
+				var email=document.getElementById("email");
+				var atposition=email.value.indexOf("@");
+				var dotposition=email.value.lastIndexOf(".");
+				if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length)
+					{email.focus();
+					email.style.backgroundColor='#e35152'; } else
+					email.style.backgroundColor='#ccffcc'; }			
+		function checkaddress() {
+				var address=document.getElementById("address");
+				if (address.value.length==0 || address.value==" ")
+					{address.focus();
+					address.style.backgroundColor='#e35152';
+					} else address.style.backgroundColor='#ccffcc'; } 	
+		function checktk() {
+				var tk=document.getElementById("tk");
+				if (tk.value.length==0 || tk.value==" ")
+					{tk.focus();
+					tk.style.backgroundColor='#e35152';
+					} else tk.style.backgroundColor='#ccffcc'; } 
+		function checkphone() {
+				var phone=document.getElementById("phone");
+				if (phone.value.length==0 || phone.value==" ")
+					{phone.focus();
+					phone.style.backgroundColor='#e35152';
+					} else phone.style.backgroundColor='#ccffcc'; } 			
+	</script>
 </body>
+
+
+
+</html>
+
+
+
+
+
+
