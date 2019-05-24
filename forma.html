@@ -7,28 +7,31 @@
 			alert("Ευχαριστούμε για την παραγγελία σας");
 			}
 			</script>
+			
 	</head>
 	<body>
 		<h1>ΟΛΟΚΛΗΡΩΣΗ ΠΑΡΑΓΓΕΛΙΑΣ</h1>
+		<div id="form">
+		
 		<table>
 			<tr>
 			<form name="myForm" action="" onSubmit="return
 			validateForm()" method="post">
-			<td> Όνομα* :
+			<td> <a> Όνομα* : </a>
 			<td><input id="fname" type="text" onBlur="checkfname()" >
 			</tr>
-			<td> Επίθετο* :
+			<td> <a> Επίθετο* : </a>
 			<td><input id="lname" type="text" onBlur="checklname()" >
 			</tr>
 			<tr>
-			<td>Email* :
+			<td> <a> Email* : </a>
 			<td><input id="email" type="text"  onBlur="checkemail()">
 			</tr>
 			<tr>
-			<td>Χώρα* :
+			<td> <a> Χώρα* :</a>
 			<td><input id="counrty" type="text" onBlur="checkcountry()">
 			</tr>
-			<td>Πόλη* :
+			<td> <a> Πόλη* : </a>
 			<td><select>
 				<option value="Attiki">Αττικής</option>
 				<option value="Euboia">Εύβοιας</option>
@@ -85,21 +88,24 @@
 				</select><br/>
 			</tr>
 			<tr>
-			<td>Διεύθυνση* :
+			<td> <a> Διεύθυνση* : </a>
 			<td><input id="address" type="text" onBlur="checkaddress()" >
 			</tr>
 			<tr>
-			<td>TK* :
+			<td> <a> TK* : </a>
 			<td><input id="tk" type="text"  onBlur="checktk()">
 			</tr>
 			<tr>
-			<td>Τηλέφωνο* :
+			<td> <a> Τηλέφωνο* : </a> 
 			<td><input id="phone" type="text"  onBlur="checkphone()">
-			<input type="submit" value="Αποθήκευση"onclick="finish1();" >  
+			</tr>
+			<tr>
+			<td><input type="submit" value="Αποθήκευση"onclick="finish1();" >  
 			<td><input type="submit" value="Αρχική Σείδα" onclick="window.open('index.html')"  >
 			</tr>
 			</form>
 	</table>
+	</div>
 	<script language="JavaScript">
 		function checkfname() {
 				var fname=document.getElementById("fname");
