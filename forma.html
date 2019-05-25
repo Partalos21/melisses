@@ -2,6 +2,7 @@
 	<head>
 		<link rel="stylesheet" href="Style.css">
 		<title>ΟΛΟΚΛΗΡΩΣΗ ΠΑΡΑΓΓΕΛΙΑΣ</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script language="JavaScript">
 			function finish1() {
 			alert("Ευχαριστούμε για την παραγγελία σας");
@@ -14,24 +15,24 @@
 		<div id="form">
 		
 		<table>
+			
+			<form action="php.php" method="post">
 			<tr>
-			<form name="myForm" action="" onSubmit="return
-			validateForm()" method="post">
-			<td> <a> Όνομα* : </a>
-			<td><input id="fname" type="text" onBlur="checkfname()" >
+			<td> <label for="fname">Όνομα* :</label>
+			<td><input name="fname" type="text" onBlur="checkfname()" >
 			</tr>
-			<td> <a> Επίθετο* : </a>
-			<td><input id="lname" type="text" onBlur="checklname()" >
-			</tr>
-			<tr>
-			<td> <a> Email* : </a>
-			<td><input id="email" type="text"  onBlur="checkemail()">
+			<td> <label for="lname">Επίθετο* :</label>
+			<td><input name="lname" type="text" onBlur="checklname()" >
 			</tr>
 			<tr>
-			<td> <a> Χώρα* :</a>
-			<td><input id="counrty" type="text" onBlur="checkcountry()">
+			<td> <label for="email">Email* :</label>
+			<td><input name="email" type="text"  onBlur="checkemail()">
 			</tr>
-			<td> <a> Πόλη* : </a>
+			<tr>
+			<td> <label for="country">Χώρα* :</label>
+			<td><input name="country" type="text" onBlur="checkcountry()">
+			</tr>
+			<td> <label for="city">Πόλη* :</label>
 			<td><select>
 				<option value="Attiki">Αττικής</option>
 				<option value="Euboia">Εύβοιας</option>
@@ -88,19 +89,19 @@
 				</select><br/>
 			</tr>
 			<tr>
-			<td> <a> Διεύθυνση* : </a>
-			<td><input id="address" type="text" onBlur="checkaddress()" >
+			<td> <label for="address">Διεύθυνση* :</label>
+			<td><input name="address" type="text" onBlur="checkaddress()" >
 			</tr>
 			<tr>
-			<td> <a> TK* : </a>
-			<td><input id="tk" type="text"  onBlur="checktk()">
+			<td> <label for="tk">ΤΚ* :</label>
+			<td><input name="tk" type="text"  onBlur="checktk()">
 			</tr>
 			<tr>
-			<td> <a> Τηλέφωνο* : </a> 
-			<td><input id="phone" type="text"  onBlur="checkphone()">
+			<td> <label for="phone">Τηλέφωνο* :</label>
+			<td><input name="phone" type="text"  onBlur="checkphone()">
 			</tr>
 			<tr>
-			<td><input type="submit" value="Αποθήκευση"onclick="finish1();" >  
+			<td><input type="submit" class="button" value="Αποθήκευση" title="Αποθήκευση" name="button" onclick="finish1();" ></input>
 			<td><input type="submit" value="Αρχική Σείδα" onclick="window.open('index.html')"  >
 			</tr>
 			</form>
