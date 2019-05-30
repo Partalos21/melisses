@@ -4,7 +4,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$db = "checkout";
+$db = "telos";
 
 
 $conn = new mysqli($servername, $username, $password);
