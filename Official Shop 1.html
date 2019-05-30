@@ -45,8 +45,9 @@
 		</div>
 		<input type="button" value="Προσθήκη στο καλάθι" onclick="window.open('basket.html') " /></br>
 		<input type="button" value="-" onclick="display1();" /> <input type="button" value="+" onclick="display2();" />
-		<p id="demo"></p>
 		<div id="count">
+		<p id="demo"></p>
+		
 		<script>
 		var count = 0;
 		var price = 0;
@@ -54,7 +55,6 @@
 			count=count +1;
 			price = price + 21,00; 
 			document.getElementById("demo").innerHTML =count + "<br>" + price + "€" ;
-			document.getElementById("demo").innerHTML. =count
 			}
 		function display1() {
 			count=count -1;
