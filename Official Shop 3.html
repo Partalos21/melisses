@@ -1,34 +1,36 @@
 <html lang="en">
 	<head>
 		<title>Official Shop 3</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/style.css">
 		<h2><p align="center"<b><big>ΜΕΛΙΣΣΕΣ</big></b></p></h2>
+		<meta charset="UTF-8">
 	</head>
 
 	<body>
 
-		<p align="center"><img src="melissesbc.jpg" width="1294" height="503" ></p>
+		<p align="center"><img class="melissesimg" src="img/melissesbc.jpg"  width="1294" height="503"  style="margin-top: 38px"/></p>
 		<p>&nbsp;</p>
 		<div id="menu">
 
 			<table class="menu" cellspacing="30" >
 				<tr>
-				
+
 				<td>	<a href="video.html">ΒΙΝΤΕΟ</a></td>
 				<td>	<a href="diskografia.html"> ΔΙΣΚΟΓΡΑΦΙA</a></td>
 				<td>	<a href="index.html">ΑΡΧΙΚΗ</a></td>
-				<td>	<a href="officialshop.html">ΠΡΟΙΟΝΤΑ</a></td>
+				<td>	<a href="officialshop.php">ΠΡΟΙΟΝΤΑ</a></td>
 				<td>	<a href="concerts.html">ΣΥΝΑΥΛΙΕΣ</a></td>
-				
+				<td>	<a href="Cart.php">ΚΑΡΟΤΣΙ</a></td>
+
 				</tr>
 			</table>
 		</div>
-		<p align="center"><img src="tshrit12m.png" width="296" height="304"></p>
+		<p align="center"><img src="img/tshrit12m.png" width="296" height="304"></p>
 
 		<p align="center"><b>Kοντομάνικη μαύρη μπλούζα </b>
 		<p align="center"><b>Επέλεξε το νούμερο σου</b><br/>
 		&nbsp; <br>
-		 
+
 		<select>
 			<option value="Small">S</option>
 			<option value="Medium">M</option>
@@ -42,22 +44,22 @@
 		<input type="button" value="Προσθήκη στο καλάθι" onclick="window.open('basket.html')" /></br>
 		<input type="button" value="-" onclick="display1();" /> <input type="button" value="+" onclick="display2();" />
 		<p id="demo"></p>
-		
+
 		<script>
 		var count = 0;
 		var price = 0;
 		function display2() {
 			count=count +1;
-			price = price + 21,00; 
+			price = price + 21,00;
 			document.getElementById("demo").innerHTML =count + "<br>" + price + "€" ;
 			}
 		function display1() {
 			count=count -1;
 			price = price - 21,00;
 			document.getElementById("demo").innerHTML =count + "<br>" + price + "€";
-		}	
+		}
 		</script>
-		
+
 		<p>&nbsp;</p>
 		&nbsp; <br>
 

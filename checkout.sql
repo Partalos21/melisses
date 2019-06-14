@@ -29,11 +29,11 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `telos` (
-  `fname` char(50) NOT NULL,
-  `lname` char(50) NOT NULL,
+  `fname` varchar(50) NOT NULL,
+  `lname` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `country` char(20) NOT NULL,
-  `city` char(50) NOT NULL,
+  `country` varchar(20) NOT NULL,
+  `city` varchar(50) NOT NULL,
   `address` varchar(50) NOT NULL,
   `tk` int(5) NOT NULL,
   `phone` int(20) NOT NULL

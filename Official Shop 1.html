@@ -1,35 +1,36 @@
 <html lang="en">
 	<head>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/style.css">
 		<title>Official Shop 1</title>
 		<h2><p align="center"<b><big>ΜΕΛΙΣΣΕΣ</big></b></p></h2>
-		
+		<meta charset="UTF-8">
 
 	</head>
 
 	<body>
 
 		<p align="center">
-		<img src="melissesbc.jpg" width="1294" height="503" ></p>
+		<img class="melissesimg" src="img/melissesbc.jpg"  width="1294" height="503"  style="margin-top: 38px"/></p>
 		<p>&nbsp;</p>
 		<div id="menu">
 
 			<table class="menu" cellspacing="30" >
 				<tr>
-				
+
 				<td>	<a href="video.html">ΒΙΝΤΕΟ</a></td>
 				<td>	<a href="diskografia.html"> ΔΙΣΚΟΓΡΑΦΙA</a></td>
 				<td>	<a href="index.html">ΑΡΧΙΚΗ</a></td>
-				<td>	<a href="officialshop.html">ΠΡΟΙΟΝΤΑ</a></td>
+				<td>	<a href="officialshop.php">ΠΡΟΙΟΝΤΑ</a></td>
 				<td>	<a href="index.php">ΣΥΝΑΥΛΙΕΣ</a></td>
-				
+				<td>	<a href="Cart.php">ΚΑΡΟΤΣΙ</a></td>
+
 				</tr>
 			</table>
 		</div>
 		<p align="center">
-		<img  src="tshirt13m.png" width="287" height="298"></p>
-		
-     
+		<img  src="img/tshirt13m.png" width="287" height="298"></p>
+
+
 		<h3><b>Kοντομάνικη γκρι μπλούζα </h3></b>
 		<h4>Επέλεξε το νούμερο σου</h4>
 		<br/>
@@ -47,24 +48,24 @@
 		<input type="button" value="-" onclick="display1();" /> <input type="button" value="+" onclick="display2();" />
 		<div id="count">
 		<p id="demo"></p>
-		
+
 		<script>
 		var count = 0;
 		var price = 0;
 		function display2() {
 			count=count +1;
-			price = price + 21,00; 
+			price = price + 21,00;
 			document.getElementById("demo").innerHTML =count + "<br>" + price + "€" ;
 			}
 		function display1() {
 			count=count -1;
 			price = price - 21,00;
 			document.getElementById("demo").innerHTML =count + "<br>" + price + "€";
-		}	
+		}
 		</script>
 		</div>
 		<p>&nbsp;</p>
-		
+
 	</body>
 
 </html>
